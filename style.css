@@ -1,0 +1,100 @@
+body {
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+
+header {
+    background-color: azure;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 3px 10px black;
+}
+
+header > h1 {
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+main {
+    padding: 24px;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.instructions {
+    font-size: 2em;
+    line-height: 0.8em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9em;
+    border-radius: 10px;
+    border: none;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 5px 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+    margin: 0 auto;
+    background-color: bisque;
+    border-radius: 18px;
+    border: 1px solid black;
+    padding: 24px;
+}
+
+.operators {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+.active {
+    background-color: rgb(101, 236, 101);
+}
+
+#result-display {
+    text-align: end;
+    font-size: large;
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: red;
+}
+
+
+button {
+    padding: 8px 20px;
+    margin: 5px 0px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 18px;
+    transition: opacity 0.25s, scale 0.1s, background-color 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    scale: 1.05;
+}
